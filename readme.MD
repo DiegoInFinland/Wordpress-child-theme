@@ -4,6 +4,6 @@ This repository contains a minimal Wordpress child theme of Twentytwentyfive the
 
 ## Usage
 
-1 - Place the child theme in /themes.
-2 - Activate theme on admin panel.
-3 - Customize as needed.
+1. Place the child theme in /themes.
+2. Activate theme on admin panel.
+3. Customize as needed.
