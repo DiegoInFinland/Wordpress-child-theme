@@ -1,0 +1,235 @@
+/*
+Theme Name: Twenty Twenty-Five-child 
+Author: Diego(c) 
+Requires PHP: > 7.2 
+Template: twentytwentyfive 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0
+Description: Child theme for Twenty Twenty-Five 
+*/ 
+
+h2, h3, h4, h5, h6, p {
+    font-family: "Playfair Display", serif; 
+    /* font-weight: 700; */ 
+    font-style: normal;
+    line-height: 1.75;
+    font-size: 1rem;   
+    letter-spacing: 0.025em; 
+    font-weight: 200;  
+}
+
+a {
+  color: black; 
+  text-decoration: none; 
+}
+
+a:hover {
+  color: #d9baba; 
+}
+
+footer a {
+  color: black; 
+}
+
+.custom {
+  opacity: 0.7;   
+  color: #eee;
+  transition: padding 0.3s ease; 
+  background-color: transparent;
+  padding: 0.5rem 1rem;  
+}
+
+.custom.scrolled {
+  opacity: 1;  
+  background-color: rgb(223, 214, 214); 
+  padding: 0.2rem 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  border-bottom: 4px;  
+}
+
+
+.mi-nav-lista {
+    list-style: none;
+    margin: 0;
+    gap: 1.5rem;  
+}
+
+.mi-nav-lista a {
+    color: #665f4d;
+    text-decoration: none;
+    font-weight: bold;
+    
+    padding: 1rem 5.5rem;  
+}
+
+.mi-nav-lista li {
+    display: inline-block;
+    position: relative;
+}
+
+.mi-nav-lista a:hover {
+    text-decoration: underline;  
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mid-section .fs2 {
+  font-size: 2rem; 
+}
+
+/* main pages */
+.presentation-cover {
+  text-align: center;
+  padding: 3rem 1rem;
+  padding-top: 7rem; 
+  height: 50vh;    
+  background: linear-gradient(to right, #d7dede, #d3e1ee); 
+  font-family: monospace, "Playfair Display", serif;  
+  background-size: cover; 
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%); 
+}
+
+.post-cover {
+  text-align: center;
+  padding: 3rem 2rem; 
+  height: 100px;   
+  padding: 100px 20px;  
+  font-family: "Playfair Display", serif;   
+}
+
+.card {
+    background-color: #e4e8eb; 
+    border: 2px solid transparent;  
+    border-radius: 15px;
+    box-shadow: none; 
+    display: flex; 
+}
+
+.card-img {
+  height: 220px; 
+  object-fit: cover;
+}
+
+/* sidebar left */ 
+.sidebar-left-panel {
+    font-size: 3rem; 
+    display: inline-block; 
+    text-align: center;  
+}
+
+.sidebar-left-panel a {
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1rem;   
+    text-align: center; 
+   
+}
+
+.sidebar-left-panel a:hover {
+    color: #d9baba; 
+}
+
+/* category content */
+.category-card {
+  display: flex;
+  gap: 20px;
+  justify-content: center; 
+  flex-wrap: wrap;
+}
+.category-content {
+  display: inline-block; 
+  padding: 0.4rem 0.8rem;
+  background-color: rgb(229, 226, 226);  
+  color: #493b3b;
+  border-radius: 50rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+/*.category-content:hover {
+  background-color: #c2d0bf;
+}*/
+
+/* pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.page-numbers {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.page-numbers:hover {
+  background-color: #f0f0f0;
+  border-color: #aaa;
+}
+
+.page-numbers.current {
+  background-color: #0073aa;
+  color: white;
+  border-color: #0073aa;
+  cursor: default;
+}
+
+.page-numbers.prev,
+.page-numbers.next {
+  font-weight: bold;
+}
+
+/* breakpoints */ 
+@media (max-width: 768px) {
+  .category-card {
+    flex-direction: column;
+    align-items: center; 
+  }
+  .sidebar-left-panel {
+    text-align: center; 
+  }
+
+  .sidebar-left-panel span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 798px) {
+  .navbar .nav-link {
+    background: linear-gradient(to right, #1e1e2f, #2a2a40); 
+    color: #00bfff !important;
+  }
+
+  .navbar .nav-link:hover {
+    color: #ffffff !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .presentation-cover {
+    clip-path: none; 
+  }
+}
+
+@media (max-width: 375px) {
+    .presentation-cover {
+    padding-bottom: 30px;  
+    clip-path: none; 
+  }
+}
+

@@ -1,0 +1,13 @@
+.DS_Store 
+db/ 
+wordpress/ai1wm-backups
+wordpress/cache 
+wordpress/plugins 
+wordpress/themes/twentytwentyfive 
+wordpress/themes/twentytwentyfive-child/img/ 
+wordpress/upgrade 
+wordpress/-temp-backup 
+wordpress/uploads 
+wordpress/wflogs 
+wordpress/autoptimize_404_handler.php
+
