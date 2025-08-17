@@ -4,6 +4,6 @@ This repository contains a minimal Wordpress child theme of Twentytwentyfive the
 
 ## Usage
 
-1. Place the child theme in /themes.
+1. Copy the themes folder which is under wordpress directory and place it into /themes in your Wordpress project. Twentytwentyfive theme must be installed in your project. 
 2. Activate theme on admin panel.
 3. Customize as needed.
